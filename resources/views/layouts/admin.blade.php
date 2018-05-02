@@ -121,11 +121,11 @@
                         <a href="#"><i class="fa fa-wrench fa-fw"></i>Users<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="/users">All Users</a>
+                                <a href="{{route('admin.users.index')}}">All Users</a>
                             </li>
 
                             <li>
-                                <a href="/users/create">Create User</a>
+                                <a href="{{route('admin.users.create')}}">Create User</a>
                             </li>
 
                         </ul>
@@ -278,51 +278,24 @@
         <!-- /.navbar-static-side -->
     </nav>
 
-
-
-
-
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
                 <li>
                     <a href="/profile"><i class="fa fa-dashboard fa-fw"></i>Profile</a>
                 </li>
-
-
-
-
                 <li>
                     <a href="#"><i class="fa fa-wrench fa-fw"></i> Posts<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li>
-                            <a href="">All Posts</a>
-                        </li>
-
-                        <li>
-                            <a href="">Create Post</a>
-                        </li>
-
+                        <li><a href="">All Posts</a></li>
+                        <li><a href="">Create Post</a></li>
                     </ul>
                     <!-- /.nav-second-level -->
                 </li>
-
-
-
-
-
             </ul>
-
         </div>
-
     </div>
-
 </div>
-
-
-
-
-
 
 <!-- Page Content -->
 <div id="page-wrapper">
@@ -350,14 +323,6 @@
 <script src="{{asset('js/metisMenu.js')}}"></script>
 <script src="{{asset('js/sb-admin-2.js')}}"></script>
 <script src="{{asset('js/scripts.js')}}"></script>
-
-
 @yield('footer')
-
-
-
-
-
 </body>
-
 </html>
