@@ -4,7 +4,7 @@
     <h1>Edit Users</h1>
 
     <div class="col-sm-3">
-        <img src="{{$user->photo ? '../../'.$user->photo->file : 'http://placehold.it/400x400' }}" alt="" class="img-responsive img-rounded">
+        <img src="{{$user->photo ? '../../../'.$user->photo->file : 'http://placehold.it/400x400' }}" alt="" class="img-responsive img-rounded">
     </div>
 
     <div class="col-sm-9">
@@ -43,6 +43,12 @@
         <div class="form-group">
             {!! Form::submit('Edit user', ['class'=>'btn btn-default']) !!}
         </div>
+        {!! Form::close() !!}
+
+        {!! Form::open(['method'=>'DELETE','action'=>['AdminUsersController@destroy', $user->id]]) !!}
+            <div class="form-group">
+                {!! Form::submit('Delete User', ['class'=>'btn btn-danger']) !!}
+            </div>
         {!! Form::close() !!}
 
 

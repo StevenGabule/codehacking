@@ -136,11 +136,11 @@
                         <a href="#"><i class="fa fa-wrench fa-fw"></i> Posts<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="/posts">All Posts</a>
+                                <a href="{{route('admin.posts.index')}}">All Posts</a>
                             </li>
 
                             <li>
-                                <a href="/posts/create">Create Post</a>
+                                <a href="{{route('admin.posts.create')}}">Create Post</a>
                             </li>
 
                         </ul>
@@ -158,32 +158,17 @@
                             <li>
                                 <a href="/categories/create">Create Category</a>
                             </li>
-
                         </ul>
-                        <!-- /.nav-second-level -->
                     </li>
 
 
                     <li>
                         <a href="#"><i class="fa fa-wrench fa-fw"></i>Media<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li>
-                                <a href="/media">All Media</a>
-                            </li>
-
-                            <li>
-                                <a href="">Upload Media</a>
-                            </li>
-
+                            <li><a href="/media">All Media</a></li>
+                            <li><a href="">Upload Media</a></li>
                         </ul>
-                        <!-- /.nav-second-level -->
                     </li>
-
-
-
-
-
-
 
                     <li>
                         <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
